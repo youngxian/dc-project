@@ -1,0 +1,60 @@
+{% extends 'auth_base.html' %}
+{% load widget_tweaks %}
+{% block title %}Login{% endblock title %}
+{% block content %}
+    <div class="col-md-5 content">
+        <div class="woocommerce-notices-wrapper"></div>
+        <h2 class="font-weight-bold mb-4 text-center header_logo">LOGO here</h2>
+        <hr class="mt-1 mb-1" />
+        <h2 class="font-weight-bold mb-2 text-center header_title">Login</h2>
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-danger" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        <form class="woocommerce-form woocommerce-form-login login" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary login_btn" name="login" value="Log in">Log in</button>
+                <p class="text_muted">
+                    You can also Login with a<a href="#"> <b>Magic Link </b></a>
+                </p>
+                <a class="btn btn-block btn-outline-dark-gray mb-2" data-turbo-frame="_top" href="/users/auth/google_oauth2">
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" class="mr-2">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                d="M5.45455 21.0046V11.7319L2.57875 9.10097L0 7.64101V19.3683C0 20.2737 0.733636 21.0046 1.63636 21.0046H5.45455Z"
+                                fill="#4285F4"></path>
+                                <path
+                                d="M18.5455 21.0046H22.3637C23.2691 21.0046 24 20.271 24 19.3683V7.64101L21.0792 9.31334L18.5455 11.7319V21.0046Z"
+                                fill="#34A853"></path>
+                                <path
+                                d="M5.45455 11.7319L5.06323 8.10875L5.45455 4.64101L12 9.5501L18.5455 4.64101L18.9832 7.9215L18.5455 11.7319L12 16.641L5.45455 11.7319Z"
+                                fill="#EA4335"></path>
+                                <path
+                                d="M18.5455 4.64101V11.7319L24 7.64101V5.45919C24 3.43555 21.69 2.28191 20.0727 3.49555L18.5455 4.64101Z"
+                                fill="#FBBC04"></path>
+                                <path
+                                d="M0 7.64101L2.50864 9.52248L5.45455 11.7319V4.64101L3.92727 3.49555C2.30727 2.28191 0 3.43555 0 5.45919V7.64101Z"
+                                fill="#C5221F"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="24" height="24" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="text-default">Sign in with Google</div>
+                    </div>
+                </a>
+                <p class="text_muted">
+                    <a href="#"> <b>Set or Reset Your Password </b></a> <br />
+                    Don't have an account?<a href="{% url 'register' %}"> <b>Sign Up</b></a>
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
