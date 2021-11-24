@@ -208,6 +208,12 @@ a:focus {
 a:focus, a:visited {
   outline: none;
 }
+.btn-header {
+  background: blueviolet;
+  color: #fff;
+  border-color: #fff;
+  margin-top: 10px;
+}
 
 ul, ol {
   margin-bottom: 0px;
