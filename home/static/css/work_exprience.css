@@ -1,0 +1,49 @@
+
+.work-banner {
+    background: url("/static/images/work_exprience/1.png");
+    position: relative;
+    background-position: left;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    width: 450px;
+    height: 500px;
+    left: 716px;
+    top: 65px;
+}
+
+.work-header {
+    padding-left: 100px;
+    padding-top: 100px;
+    background-size: cover;
+    position: relative;
+    background-color: #E5E5E5;
+}
+.work-content {
+    width: 555px;
+    height: 384px;
+    left: 99px;
+    top: 176px;
+    margin-bottom: 50px;
+}
+.work-content h1 {
+    font-size: 60px;
+    margin: 15px 0px 15px;
+    line-height: 73px;
+    letter-spacing: -1.3px;
+    color: #000;
+}
+.work-content p {
+    margin-bottom: 35px;
+    color: #000;
+    opacity: .8;
+    font-size: 20px;
+    line-height: 38px;
+}
+ .apply-btn {
+     background-color: #481788;
+ }
+
+ 

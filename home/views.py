@@ -10,3 +10,10 @@ class HomeView(View):
 
     def get(self, request, **kwargs):
         return render(request, self.template_name)
+
+
+class WorkExprienceView(View):
+    template = "work_exprience_page.html"
+
+    def get(self, request, **kwargs):
+        return render(request, self.template)
