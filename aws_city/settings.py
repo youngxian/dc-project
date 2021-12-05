@@ -47,6 +47,7 @@ LOCAL_APPS = [
     'home',
     'authentication',
     'workexperience',
+    'blog',
 ]
 
 INSTALLED_APPS += LOCAL_APPS
