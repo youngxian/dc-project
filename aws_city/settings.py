@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'aws_city.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-if DEBUG == True:
+if "mysql" == config('DB_ENGINE_NAME'):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -98,7 +98,7 @@ if DEBUG == True:
             'PORT': config('DATABASE_PORT')
         }
     }
-else:
+if "sqlite" == config('DB_ENGINE_NAME'):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
