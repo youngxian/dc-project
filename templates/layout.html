@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content="{{csrf_token}}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'flaticon/flaticon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/work_experience.css' %}" />
+
+    {% block extrastyles %}{% endblock %}
+
+</head>
+
+<body>
+    {% include 'header.html' %}
+
+    {% block content %} {% endblock %}
+    <!-- Footer section start -->
+
+    {% include 'footer.html' %}
+
+
+    {% block javascript %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'lib/jquery/index.js' %}"></script>
+    <script src="{% static 'js/common.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'lib/fontawesome/js/all.min.js' %}"></script>
+    <script src="{% static 'lib/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js' %}"></script>
+    {% endblock %}
+    {% block extrascript %}
+    {% endblock extrascript %}
+</body>
+
+</html>

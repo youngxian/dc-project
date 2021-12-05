@@ -1,0 +1,17 @@
+{% extends 'form_layout.html' %}{% load static %}
+{% block extrastyles %}
+<link rel="stylesheet" href="{% static 'OwlCarousel2-2.3.4/dist/assets/owl.carousel.css' %}" />
+{% endblock %}
+{% block form_content %}
+<nav>
+    <a href=""><img src="https://cdn.looka.com/images/logos/looka_logo_black.svg" alt="" class="w-50"></a>
+</nav>
+<section class="step_form_section">
+    <div class="container">
+        <div>
+            <h1>Example with Steps UI</h1>
+            <p>Follow the simple 4 steps to complete your onboarding</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

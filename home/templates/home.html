@@ -1,24 +1,302 @@
-{% extends 'base.html' %}
-
+{% extends 'layout.html' %}{% load static %}
+{% block extrastyles %}
+<link rel="stylesheet" href="{% static 'OwlCarousel2-2.3.4/dist/assets/owl.carousel.css' %}" />
+{% endblock %}
 {% block content %}
+
+<!-- <div class="background-overlay"></div> -->
+<div class="event-alert">
+    <a class="event-alert-p base-p-default">Apply now for the upcoming cohort! Get matched with a team and ship a MVP!
+    </a><a href="https://www.teamflowhq.com/virtual-events-holiday-party" class="base-p-default event-alert-link">Learn
+        More</a>
+</div>
+<header class="header-index">
+
+    <h1 class="h1 header-index__title">
+        Collaborate in a real team<br class="only-desktop">Gain <span class="span-gradient">real world
+        </span>experience
+    </h1>
+    <p class="header__text">Learn by doing, get modern devops skills, &amp; level up your career <br
+            class="only-desktop"> — whether you're starting out or a seasoned pro from anywhere in the world</p>
+    <div class="header_btn">
+        <a class="button header-index__signup-btn" href="/accounts/signup"
+            data-exp-cta="open-signup_signup_get-started-for-free_content_hero">
+            Get started for free
+        </a>
+        <div class="header-index__secondary-button">
+            <a href="/request-demo" class="button button--tertiary"
+                data-exp-cta="open-i-link_link_schedule-a-demo_content_hero">
+                Learn about our platform
+            </a>
+        </div>
+    </div>
+    <img src="https://assets.website-files.com/615853a101f69939f4d8fac1/615853a101f699e8eed8fb34_partner-network%20(1).svg"
+        loading="lazy" alt="Illustration of three people in circles connected by dotted lines"
+        class="header-index__img">
+</header>
 <!-- Banner Section Start -->
-<section class="banner">
+<!-- <section class="banner">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-xl-7">
                 <div class="banner-content text-center">
-                    <span class="subheading" >Start the Acaedemy Today</span>
-                    <h1><span class="font-weight-normal" >It's time to amplify your career with </span>AWS City</h1>
+                    <span class="subheading">Start the Acaedemy Today</span>
+                    <h1><span class="font-weight-normal">It's time to amplify your career with </span>AWS City</h1>
                     <p>Build to help you learn.</p>
-                    {% if user.is_authenticated %}<a href="{% url 'login' %}" class="btn btn-main mr-2" >Sign Out</a>{% else %}<a href="{% url 'login' %}" class="btn btn-main mr-2" >Sign In</a>{% endif %}  
-                    <a href="#" class="btn btn-tp" >Sign up </a>  
+                    {% if user.is_authenticated %}<a href="{% url 'login' %}" class="btn btn-main mr-2">Sign Out</a>{%
+                    else %}<a href="{% url 'login' %}" class="btn btn-main mr-2">Sign In</a>{% endif %}
+                    <a href="#" class="btn btn-tp">Sign up </a>
                 </div>
             </div>
-        </div> <!-- / .row -->
-    </div> <!-- / .container -->
-</section>
+        </div>
+    </div> 
+</section> -->
 <!-- Banner Section end -->
+<section class="our_hiring">
+    <div class="container">
+        <div class="our_hiring_company">
+            <h6>the best companies</h6>
+            <h1 class="mt-lg-5">Working together with the <br>Next generation companies</h1>
 
+        </div>
+        <p class="our_hiring_text text-center mt-lg-4">We're super proud to educate the UX/UI community and place
+            students
+            <br>in the best companies on
+            the planet.
+        </p>
+        <div class="owl-carousel owl-carousel2 owl-theme mt-lg-5">
+            <div class="partner" data-slide-index="0">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612de92414af7820f14e78a6_Frame%2079-p-800.png"
+                    alt="comma" />
+            </div>
+            <div class="partner" data-slide-index="1">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612de90c03705b1fb8be2216_Frame%2078.png"
+                    alt="comma" />
+            </div>
+            <div class="partner" data-slide-index="2">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612de91a548dc6464a1b47be_Frame%2080-p-800.png"
+                    alt="comma" />
+            </div>
+            <div class="partner" data-slide-index="3">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612de93014af7810b34e78ef_Frame%2077-p-800.png"
+                    alt="comma" />
+            </div>
+            <div class="partner" data-slide-index="4">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612de9f2cfa698005e2f3883_Frame%2069.png"
+                    alt="comma" />
+            </div>
+            <div class="partner" data-slide-index="5">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612dea0be2e1a211c2704aa1_Frame%2067.png"
+                    alt="comma" />
+            </div>
+            <div class="partner" data-slide-index="6">
+                <img class="lazyOwl img_width" id="img_width"
+                    src="https://global-uploads.webflow.com/5f8e97a7f04a9fe98d9401a6/612dea166538f212345cea3f_Frame%2065.png"
+                    alt="comma" />
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="flow">
+    <div class="container-fluid ">
+        <div class="row ml-lg-5 mr-lg-5">
+            <div class="col-lg-6">
+                <div class="team_again mx-lg-1">
+                    <div class="mb-lg-5">
+                        <h5 class="fel_text mb-lg-4">Feel like a <br>team again.</h5>
+                        <p class="fel_text_org">Organic, frictionless communication lets you talk with your team without
+                            needing long chat
+                            threads or scheduled calls.</p>
+                    </div>
+                    <div class="video-tag">
+                        <video autoplay="autoplay" muted loop data-object-fit="cover">
+                            <source src="{% static 'video/meeting.mp4' type='video/mp4' %}">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team_agains  mx-lg-1">
+                    <div class="video-tag">
+                        <!-- <video autoplay="autoplay" muted loop data-object-fit="cover">
+                            <source src="{% static 'video/meeting.mp4' type='video/mp4' %}">
+                        </video> -->
+                    </div>
+                    <div class="mb-lg-5">
+                        <h5 class="fel_texts mb-lg-4">Meeting rooms with all<br>docs in one place.</h5>
+                        <p class="fel_text_orgs">Create dedicated private rooms for all your meetings — from 1:1’s to
+                            standups to brainstorming and whiteboarding sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our_tools_in pt-lg-4">
+    <div class="our_hiring_company mt-lg-5 ">
+        <h2 class="mt-lg-5 text-center">Explore devops with tools that matter</h2>
+    </div>
+    <p class="our_hiring_text text-center mt-lg-4">Choosing Firstbase grants you access to an extensive partnership
+        network. <br>Over $150k in exclusive deals on software & services. Easy invoicing, a physical <br>address in the
+        United
+        States, legal consultations, and more.
+    </p>
+    <div class="position-relative marquee-container d-none d-sm-block">
+        <div class="marquee d-flex">
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+
+        </div>
+        <div class="marquee marquee2 d-flex">
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+        </div>
+    </div>
+    <div class="position-relative marquee-container d-none d-sm-block mt-lg-5">
+        <div class="marquee d-flex">
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+
+        </div>
+        <div class="marquee marquee2 d-flex">
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+            <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+                    alt=""></span>
+        </div>
+    </div>
+</section>
 <!-- Feature section start -->
 <section class="feature section-padding pb-0">
     <div class="container">
@@ -34,7 +312,7 @@
         </div>
 
         <div class="row ">
-            <div class="col-lg-3 col-md-6 col-xl-3" >
+            <div class="col-lg-3 col-md-6 col-xl-3">
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="flaticon-flag"></i>
@@ -45,7 +323,7 @@
                     </div>
                 </div>
             </div>
-             <div class="col-lg-3 col-md-6 col-xl-3">
+            <div class="col-lg-3 col-md-6 col-xl-3">
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="flaticon-layers"></i>
@@ -56,7 +334,7 @@
                     </div>
                 </div>
             </div>
-             <div class="col-lg-3 col-md-6 col-xl-3">
+            <div class="col-lg-3 col-md-6 col-xl-3">
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="flaticon-video-camera"></i>
@@ -74,14 +352,30 @@
                     </div>
                     <div class="feature-text">
                         <h4>Life Time Support</h4>
-                        <p>Develop skills for career of various majors including language  </p>
+                        <p>Develop skills for career of various majors including language </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section>
+
+</section>
+
 <!-- Feature section End -->
 
 
 {% endblock content %}
+{% block extrascript %}
+<script src="{% static 'OwlCarousel2-2.3.4/dist/owl.carousel.js' %}"></script>
+<script src="{% static 'js/home.js' %}"></script>
+<!-- <script>
+    $(document).ready(() => {
+        carousels();
+        carouselss();
+    });
+</script> -->
+
+{% endblock %}
