@@ -4,7 +4,7 @@ from django.views import View
 
 
 class WorkExperienceFormView(View):
-    template_name = "Forms/index.html"
+    template_name = "Forms/form_one.html"
 
     def get(self, request, **kwargs):
         return render(request, self.template_name)

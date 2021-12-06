@@ -1,0 +1,99 @@
+{% extends 'form_layout.html' %}{% load static %}
+{% block extrastyles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/workexperience/form/first_form.css' %}" />
+
+{% endblock %}
+{% block form_content %}
+<section class="step_form_section">
+    <div class="container">
+
+        <div class="top_header_section d-flex flex-row">
+            <div class="header_section">
+                <h3>Hey , nice to meet you</h3>
+                <p>Knowing your industry will help us pick symbols, colors, and more.</p>
+            </div>
+            <button class="next_button">Continue <i class="fa fa-arrow-right"></i></button>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Title</label>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">First Name</label>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Last Name</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="form-item">
+                    <input type="email" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Email address</label>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Password</label>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Date of Birth</label>
+                </div>
+            </div>
+        </div>
+        <div class="top_header_section d-flex flex-row">
+            <div class="header_section">
+                <h3>Tell us about your educational background</h3>
+                <p>Knowing your industry will help us pick symbols, colors, and more.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">What is your current level of study or your highest completed level of
+                        study?</label>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">What is your major?</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">What year did you start your current or most recent degree?</label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">What year did you finish, or do you expect to finish your current
+                        degree?</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extrascript %}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+{% endblock extrascript %}

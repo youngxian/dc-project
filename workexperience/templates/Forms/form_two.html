@@ -1,0 +1,66 @@
+{% extends 'form_layout.html' %}{% load static %}
+{% block extrastyles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/workexperience/form/first_form.css' %}" />
+
+{% endblock %}
+{% block form_content %}
+<section class="step_form_section">
+    <div class="container">
+
+        <div class="top_header_section d-flex flex-row">
+            <div class="header_section">
+                <h3>Pick your industry</h3>
+                <p>Knowing your industry will help us pick symbols, colors, and more.</p>
+            </div>
+            <button class="next_button">Continue <i class="fa fa-arrow-right"></i></button>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Gaming, Web, Mobile, Cypto</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-item">
+                    <input type="email" id="first_name" autocomplete="off" required>
+                    <label for="first_name">What role would you like to play on your team? You may select more than one.
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Please acknowledge that this is a peer-driven, team-based course and that
+                        you will be matched with other students.</label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Please confirm you will you be able to commit at least 8-15 hours per week
+                        for this program.</label>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">What is your level of experience
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="form-item">
+                    <input type="text" id="first_name" autocomplete="off" required>
+                    <label for="first_name">Please confirm you have enough experience to handle your product role
+                        effectively
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}
+
+{% block extrascript %}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+{% endblock extrascript %}

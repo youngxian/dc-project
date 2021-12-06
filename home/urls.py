@@ -6,4 +6,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('work/exprience', WorkExprienceView.as_view(), name='work_exprience')
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
